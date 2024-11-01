@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*FOOTER*/
+#pie {
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 60, 93);
+    color: white;
+    text-align: center;
+    padding: 0em;
+    margin: 0em;
+}
+
+#pie > footer > small > p {
+    padding: 0em;
+    margin: 0em;
+    background: #001b29;
+    color: gray;
+}
+
+#pie > header {
+    display: flex;
+}
+
+.contact {
+    padding-left: 28%;
+    padding-bottom: 15px;
+}
+
+.contact > a > img {
+    width: 40px;
+    padding: 5px;
+}
+
+#github-icon {
+    width: 15px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+#encabezado {
+    display: flex;
+    top: 0;
+    width: 100%;
+    background: rgb(0, 60, 93);
+    color: white;
+    padding: 0em;
+    margin: 0em;
+}
+
+#logo {
+    padding: 10px;
+    margin-left: 200px;
+    display: inline-block;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#home {
+    padding: 10px;
+    /* margin-left: 200px; */
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+#encabezado > h1 {
+    text-align: center;
+    position: relative;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 20px;
+    text-transform: uppercase;
+}

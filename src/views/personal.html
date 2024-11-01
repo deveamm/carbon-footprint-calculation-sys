@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Erick Alexander Martínez Martínez, deveamm">
+    <meta name="description" content="¿Quieres sabes cuánto contaminas y como mejorar para evitarlo? Está es una calculadora de la Huella de Carbono especialmente diseñada para ti.">
+    <meta name="keywords" content="huella, carbono, calculadora, ambiente, cambio, climático, contaminación, cálculo, salud, bienestar, organizaciones, personal">
+
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/personal.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon/favicon.ico">
+
+    <base href="#">
+
+    <title>SIyCiSe | Calculadora Personal</title>
+  </head>
+  <body>
+    <header id="encabezado">
+      <a href="https://siycise.org" target="_blank" rel="noopener noreferrer"><img src="../assets/img/siycise.jpg" alt="Logo de SIyCiSe" id="logo"></a>
+      <h1>Calculadora de la Huella de Carbono</h1>
+      <a href="../index.html"><img src="../assets/icon/home.ico" alt="Inicio" id="home"></a>
+    </header>
+
+    <main id="principal">
+        <h2 id="titulo">Cuestionario Calculo Personal</h2>
+        <form id="formulario">
+          <!-- TRANSPORTE -->
+          <fieldset class="tarjeta">
+            <legend class="titulo">TRANSPORTE</legend>
+            <fieldset class="sub-tarjeta">
+              <legend>Vehículo</legend>
+              <label for="vehiculo">Tipo de vehículo:</label>
+              <label for="gasolina"><input type="checkbox" id="gasolina" name="vehiculo" value="gasolina"/>Gasolina</label>
+              <label for="diesel"><input type="checkbox" id="diesel" name="vehiculo" value="diesel"/>Diesel</label>
+              <label for="electrico"><input type="checkbox" id="electrico" name="vehiculo" value="electrico"/>Electrico</label>
+              <br>
+              <br>
+              <label for="kilometraje">Kilometraje: <input type="number" id="kilometraje"></label>
+              <br>
+              <br>
+              <label for="consumo-combustible">Consumo de combustible: <input type="number" id="consumo-combustible" placeholder="Litros por kilometro"></label>
+            </fieldset>
+            <br>
+            <fieldset class="sub-tarjeta">
+              <legend>Transporte Público</legend>
+              <label for="distancia">Distancia recorrida: <input type="number" id="distancia" placeholder="Kilometros"></label>
+              <br>
+              <br>
+              <label for="frecuencia">Frecuencia de uso: <input type="number" id="frecuencia"></label>
+            </fieldset>
+            <br>
+            <fieldset class="sub-tarjeta">
+              <legend>Vuelos</legend>
+              <label for="numero">Número de vuelos: <input type="number" id="numero"></label>
+              <br>
+              <br>
+              <label for="recorrido">Distancia recorrida:<input type="number" id="recorrido"></label>
+            </fieldset>
+            <br>
+          </fieldset>
+          <!-- ENERGÍA DOMÉSTICA -->
+          <fieldset class="tarjeta">
+            <legend class="titulo">ENERGÍA DOMÉSTICA</legend>
+            <fieldset class="sub-tarjeta">
+              <legend>Electricidad</legend>
+              <label for="consumo-electricidad">Consumo de electricidad: <input type="number" id="consumo-electricidad" placeholder="KWh"></label>
+            </fieldset>
+            <br>
+            <fieldset class="sub-tarjeta">
+              <legend>Gas natural y otros combustibles</legend>
+              <label for="consumo-gas">Consumo gas: <input type="number" id="consumo-gas" placeholder="m3"></label>
+            </fieldset>
+            <br>
+          </fieldset>
+          <!-- ALIMENTACIÓN -->
+          <fieldset class="tarjeta">
+            <legend class="titulo">ALIMENTACIÓN</legend>
+            <fieldset class="sub-tarjeta">
+              <label for="consumo-carne">Consumo de carne o vegetales:</label>
+              <label for="res"><input type="checkbox" name="consumo-carne" id="res" value="res">Res</label>
+              <label for="pollo"><input type="checkbox" name="consumo-carne" id="pollo" value="pollo">Pollo</label>
+              <label for="cerdo"><input type="checkbox" name="consumo-carne" id="cerdo" value="cerdo">Cerdo</label>
+              <label for="vegetales"><input type="checkbox" name="consumo-carne" id="vegetales" value="vegetales">Vegetales</label>
+            </fieldset>
+            <br>
+          </fieldset>
+          <!-- RESIDUOS -->
+          <fieldset class="tarjeta">
+            <legend class="titulo">RESIDUOS</legend>
+            <fieldset class="sub-tarjeta">
+              <label for="cantidad-residuos">Cantidad de residuos generados: <input type="number" id="cantidad-residuos" placeholder="Kilos"></label>
+              <br>
+              <br>
+              <label for="reciclaje">Hábitos de reciclaje:</label>
+              <label for="basura"><input type="checkbox" name="reciclaje" id="basura" value="basura">Basura</label>
+              <label for="reciclar"><input type="checkbox" name="reciclaje" id="reciclar" value="reciclaje">Reciclaje</label>
+              <label for="compostaje"><input type="checkbox" name="reciclaje" id="compostaje" value="compostaje">Compostaje</label>
+            </fieldset>
+            <br>
+          </fieldset>
+          <br>
+          <button type="submit" class="btn-submit" id="enviar">Enviar</button>
+        </form>
+    </main>
+
+    <footer id="pie">      
+      <header>
+        <div class="contact">
+          <h2>Redes Sociales</h2>
+          <a href="https://www.facebook.com/Sistemas-Inteligentes-y-Ciberseguridad-106231081047400" target="_blank" rel="noopener noreferrer"><img src="../assets/icon/facebook.ico" alt="Facebook logo"></a>
+          <a href="https://x.com/SIyCiSe" target="_blank" rel="noopener noreferrer"><img src="../assets/icon/x.ico" alt="X logo"></a>
+          <a href="https://sistemas-inteligentes-ciberseguridad.blogspot.com" target="_blank" rel="noopener noreferrer"><img src="../assets/icon/blogger.ico" alt="Blogger logo"></a>
+        </div>    
+        <div class="contact">
+          <h2>Contacto</h2>
+          <a href="mailto: sistemas.inteligentes.ciberseg@gmail.com"><img src="../assets/icon/email.ico" alt="Email logo"></a>
+          <a href="https://www.linkedin.com/in/alexmartinezm" target="_blank" rel="noopener noreferrer"><img src="../assets/icon/linkedin.ico" alt="LinkedIn Logo"></a>
+        </div>
+      </header>
+      <footer>
+        <small>
+          <p>Los iconos utilizados en está página fueron creados por <a href="https://www.flaticon.es/" title="Créditos" target="_blank" rel="noopener noreferrer">Flaticon</a>.</p>
+          <p>Desarrollado por Erick Alexander Martínez Martínez FCC, BUAP <a href="https://github.com/deveamm" target="_blank" rel="noopener noreferrer"><img src="../assets/icon/github.ico" alt="Icono de GitHub" id="github-icon"></a></p>
+          <p>Todos los derechos reservados &copy; 2024.</p>
+        </small>
+      </footer>
+    </footer>
+    <!-- Script Section -->
+    <script type="module" src="../scripts/personal.js"></script>
+  </body>
+</html>

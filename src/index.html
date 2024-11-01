@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Erick Alexander Martínez Martínez, deveamm">
+    <meta name="description" content="¿Quieres sabes cuánto contaminas y como mejorar para evitarlo? Está es una calculadora de la Huella de Carbono especialmente diseñada para ti.">
+    <meta name="keywords" content="huella, carbono, calculadora, ambiente, cambio, climático, contaminación, cálculo, salud, bienestar, organizaciones, personal">
+    <meta name="color" content="#003c5d" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/header.css">
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+
+    <base href="#">
+
+    <title>SIyCiSe | Calculadora de la Huella de Carbono - Personal y para las Organizaciones</title>
+  </head>
+  <body>
+    <div id="background">
+      <video autoplay loop muted poster disablepictureinpicture id="video">
+        <source type="video/webm" src="./assets/video/background.webm">
+        <source type="video/mp4" src="./assets/video/background.mp4">
+        Video de fondo no soportado por el navegador.
+      </video>
+      <div id="capa"></div>
+    </div>
+
+    <div class="container">
+      <header id="encabezado">
+        <a href="https://siycise.org" target="_blank" rel="noopener noreferrer"><img src="./assets/img/siycise.jpg" alt="Logo de SIyCiSe" id="logo"></a>
+        <h1>Calculadora de la Huella de Carbono</h1>
+      </header>
+  
+      <main id="principal">
+        <h2>¿Quién eres?</h2>
+  
+        <form>
+          <div class="button-container">
+            <button id="btn-person" name="calculator-type" type="button" value="person"><span>Persona</span></button>
+            <button id="btn-organization" name="calculator-type" type="button" value="organization"><span>Organización</span></button>
+          </div>
+        </form>
+  
+        <article>
+          <p>La Huella de Carbono (HdC) es considerada una de las más importantes herramientas para cuantificar las emisiones de gases efecto invernadero (GEI) y en forma muy general, representa la cantidad de gases efecto invernadero emitidos a la atmósfera derivados de las actividades de producción o consumo de bienes y servicios. Por eso es importante apoyarnos de la tecnología para permitirnos obtener rápidamente nuestro indice y el de nuestra organización para actuar de manera responsable y sistemática para contribuir al mejoramiento del medio ambiente.</p>
+        </article>
+      </main>
+  
+      <footer id="pie">
+        
+        <header>
+          <div class="contact">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.facebook.com/Sistemas-Inteligentes-y-Ciberseguridad-106231081047400" target="_blank" rel="noopener noreferrer"><img src="assets/icon/facebook.ico" alt="Facebook logo"></a>
+            <a href="https://x.com/SIyCiSe" target="_blank" rel="noopener noreferrer"><img src="assets/icon/x.ico" alt="X logo"></a>
+            <a href="https://sistemas-inteligentes-ciberseguridad.blogspot.com" target="_blank" rel="noopener noreferrer"><img src="assets/icon/blogger.ico" alt="Blogger logo"></a>
+          </div>
+          
+          <div class="contact">
+            <h2>Contacto</h2>
+            <a href="mailto: sistemas.inteligentes.ciberseg@gmail.com"><img src="./assets/icon/email.ico" alt="Email logo"></a>
+            <a href="https://www.linkedin.com/in/alexmartinezm" target="_blank" rel="noopener noreferrer"><img src="assets/icon/linkedin.ico" alt="LinkedIn Logo"></a>
+          </div>
+        </header>
+  
+        <footer>
+          <small>
+            <p>Los iconos utilizados en está página fueron creados por <a href="https://www.flaticon.es/" title="Créditos" target="_blank" rel="noopener noreferrer">Flaticon</a>.</p>
+            <p>Desarrollado por Erick Alexander Martínez Martínez FCC, BUAP <a href="https://github.com/deveamm" target="_blank" rel="noopener noreferrer"><img src="./assets/icon/github.ico" alt="Icono de GitHub" id="github-icon"></a></p>
+            <p>Todos los derechos reservados &copy; 2024.</p>
+          </small>
+        </footer>
+      </footer>
+    </div>
+    <!-- Scripts Section -->
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
